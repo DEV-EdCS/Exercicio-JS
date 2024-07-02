@@ -6,7 +6,6 @@ console.log(esporte)
 
 
 
-
 //Questão 2
 let esportes = ["futsal", "vôlei", "basquete", "handebol"];
 esportes.forEach(item => console.log(item));
@@ -25,6 +24,13 @@ let ladoQ = 3
 let resultado = ladoQ * ladoQ
 console.log(resultado) //9
 console.log(3 ** 2) //9
+
+function CalcularAreaQ(lado){
+    let area = lado * lado
+    console.log(`A area do quadrado de lado ${lado} é ${area}m²`)
+}
+
+CalcularAreaQ(3)
 
 
 
@@ -123,8 +129,102 @@ if (numero === 5) {
 //Declara um array de numeros de 1 a 10
 let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 //Declara um array vazio para  armazenar os numeros pares
-console.log(numeros)
+let pares = [];
+
+//itera sobre cada elemento do array 'numeros'
+numeros.forEach(numeros => {
+    //verifica se o numero é par
+    if (numeros % 2 === 0) {
+        //se for par, adiciona ao array 'pares'
+        pares.push(numeros);
+    }
+});
+
+//exibe o array de numeros pares no console
+console.log(pares); // [2, 4, 6, 8, 10]
 
 
 
 //Questão 13
+//Define um afunção que calcula a média de três notas
+function calcularMedia(nota1, nota2, nota3) {
+    return (nota1 + nota2 + nota3) / 3;
+}
+
+//Define uma função que avalia a média e retorna a situação correspondente
+function avaliarMedia(media) {
+    if (media >= 7) {
+        return "Aprovado";
+    } else if (media >= 5) {
+        "Recuperação;"
+    } else {
+        return "Reprovado";
+    }
+}
+
+//Exemplo de uso das funções
+let nota1 = 8;
+let nota2 = 7;
+let nota3 = 6;
+//calcula a média das notas
+let media = calcularMedia(nota1, nota2, nota3);
+//Avalia a média e obtém a situação
+let situacao = avaliarMedia(media);
+
+//exibe a média e a situação no console
+console.log(`Média ${media.toFixed(1)}, resultado: ${situacao}`)
+
+
+
+//Questão 14
+//Define uma função que calcula o IMC dado o peso e a altura
+function calcularIMC(peso, altura) {
+    return peso / (altura * altura);
+}
+
+//Define uma função que classifca o IMC e retorna a situação correspondente
+function classificarIMC(imc) {
+    if (imc < 18.5) {
+        return "Abaixo do peso";
+    } else if (imc < 25) {
+        return "Peso ideal";
+    } else if (imc < 30) {
+        return "Sobrepeso";
+    } else if (imc < 40) {
+        return "Obesidade";
+    } else {
+        return "Obesidade mórbida";
+    }
+}
+
+//Exemplo de uso das funções
+let peso = 72; //exemplo de peso
+let altura = 1.70; //exemplo de altura
+//Calcular o IMC
+let imc = calcularIMC(peso, altura);
+//classifica o IMC e obtém a situação
+let classificacao = classificarIMC(imc);
+
+//exibe o IMC e a situação no console
+console.log(`Seu IMC é ${imc.toFixed(1)}, resultado: ${classificacao}`);
+
+
+
+//Questão 15
+//Declara uma variável 'numero' com um valor exemplo
+let numero = 8; //exemplo de número
+
+//Itera de 1 a 10
+for (let i = 1; i <= 10; i++) {
+    //calcula o numero fornecido pelo usuario fornecido pelo usuario e o numero atual da iteracao
+    let resultado = numero * i;
+    //exibe o resultado da multiplicacao no console
+    console.log(`${numero} x ${i} = ${resultado}`);
+}
+
+
+
+//Questão 21
+var frutas = ["maça", "banana", "laranja"];
+console.log(frutas[3]);
+//undefined
