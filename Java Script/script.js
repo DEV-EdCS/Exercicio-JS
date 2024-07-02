@@ -5,8 +5,9 @@ let esporte = "Futsal"
 console.log(esporte)
 
 //Questão 2
-let esportes = ["futsal", "vôlei", "basquete", "handebol"]
-console.log(esportes)
+let esportes = ["futsal", "vôlei", "basquete", "handebol"];
+esportes.forEach(item => console.log(item));
+
 
 //Questão 3
 //para que o terceiro elemento seja exibido no console, precisa-se ser ordenado pelo console.log como mostrado abaixo
@@ -24,8 +25,14 @@ let A = 3
 let B = 8
 let C = 15
 
-let resposta = A + B
-console.log(resposta)
+let soma = A + B
+console.log(`A soma de A e B é ${soma}`)
+
+if (soma < C) {
+    console.log("A soma é menor que C")
+} else {
+    console.log("A soma não é menor que C")
+}
 
 //Questão 6
 var numero = "5";
@@ -71,6 +78,3 @@ if (numero === 5) {
 //Questão 12
 let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 console.log (numeros)
-array.forEach(numeros => {
-    
-});
