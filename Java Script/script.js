@@ -25,7 +25,7 @@ let resultado = ladoQ * ladoQ
 console.log(resultado) //9
 console.log(3 ** 2) //9
 
-function CalcularAreaQ(lado){
+function CalcularAreaQ(lado) {
     let area = lado * lado
     console.log(`A area do quadrado de lado ${lado} é ${area}m²`)
 }
@@ -211,16 +211,92 @@ console.log(`Seu IMC é ${imc.toFixed(1)}, resultado: ${classificacao}`);
 
 
 //Questão 15
-//Declara uma variável 'numero' com um valor exemplo
-let numero = 8; //exemplo de número
+//Declara uma variável 'tabuada' com um valor exemplo
+let tabuada = 8; //exemplo de número
 
 //Itera de 1 a 10
 for (let i = 1; i <= 10; i++) {
     //calcula o numero fornecido pelo usuario fornecido pelo usuario e o numero atual da iteracao
-    let resultado = numero * i;
+    let resultado = tabuada * i;
     //exibe o resultado da multiplicacao no console
-    console.log(`${numero} x ${i} = ${resultado}`);
+    console.log(`${tabuada} x ${i} = ${resultado}`);
 }
+
+
+
+//Questão 16
+/*let n1 = 4
+let n2 = 6
+
+function verificarN2(n2 === 0) {
+    if (n2 === 0) throw {
+        return "n2 = 0"
+    } else (n2 != 0) {
+        return (n1 / n2);
+    }
+}*/
+
+
+
+//Questão 17
+//Define uma função que calcula o custo da viagem
+function
+    CalcularCustoViagem(distancia) {
+    let consumoPorKm = 9.8
+    let precoLitroGasolina = 5.24
+    let consumoTotal = distancia / consumoPorKm
+    return (consumoTotal * precoLitroGasolina * 2).toFixed(2)
+}
+
+//Exemplo de uso da função com uma distancia de 2900 km
+let distancia = 2500; //exemplo de distancia
+let custo = CalcularCustoViagem(distancia)
+
+//exibe o custo de viagem no console
+console.log (`Para fazer ${distancia} Km/s você deve abastecer ${custo} R$`)
+
+
+
+//Questão 18
+ //Define uma  função que calcula o fatorial dde um número
+ function calcularFatorial(n) {
+    if (n < 0) throw "Número deve ser maior ou igual a 0"
+    let fatorial = 1
+    for (let i = n; i >0; i--) {
+        fatorial *= i
+    }
+    return fatorial
+ }
+
+ //Exemplo de uso da função com o número 5
+ let valorN = 5; //exemplo de número
+ try {
+    let fatorial = calcularFatorial(valorN)
+    //Exibe o fatorial no console
+    console.log(`O fatorial de ${valorN} é ${fatorial}`)
+ } catch (e) {
+    console.log(e)
+ }
+
+
+
+//Questão 19
+//Declara um array de numeros
+let sequencia = [12, 36, 52, 77]
+//Declara um array vazio para  armazenar os numeros mais sete
+let maisSete = [];
+
+//itera sobre cada elemento do array 'sequencia'
+sequencia.forEach(sequencia => {
+    maisSete.push (sequencia + 7)
+})
+
+//exibe o array de numeros +7
+console.log(maisSete); // [2, 4, 6, 8, 10]
+
+
+
+//Questão 20
 
 
 
