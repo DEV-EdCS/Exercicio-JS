@@ -297,7 +297,16 @@ console.log(maisSete); // [2, 4, 6, 8, 10]
 
 
 //Questão 20
-
+/*let dentificar = ['Carteira de Motorista', 'Identidade']
+switch (fazerProva) {
+    case "Carteira de Motorista":
+        console.log("COM A CARTEIRA DE MOTORISTA RAIMUNDO PODE FAZER A PROVA")
+    case "Identidade":
+        console.log("COM A IDENTIDADE RAIMUNDO PODE FAZER A PROVA")
+        break
+    default:
+        console.log("NÃO FARÁ A PROVA")
+}*/
 
 
 //Questão 21
