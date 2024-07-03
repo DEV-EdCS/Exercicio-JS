@@ -225,16 +225,34 @@ for (let i = 1; i <= 10; i++) {
 
 
 //Questão 16
-/*let n1 = 4
-let n2 = 6
-
-function verificarN2(n2 === 0) {
-    if (n2 === 0) throw {
-        return "n2 = 0"
-    } else (n2 != 0) {
-        return (n1 / n2);
+// Função para ler dois números e realizar a divisão
+function dividirNumeros(n1, n2) {
+    // Verifica se n2 é zero
+    if (n2 === 0) {
+        // Lança uma exceção se n2 for zero
+        throw new Error("Divisão por zero não é permitida");
     }
-}*/
+    
+    // Calcula o resultado da divisão
+    let resultado = n1 / n2;
+    
+    // Exibe o resultado
+    console.log(`O resultado de ${n1} dividido por ${n2} é ${resultado}`);
+}
+
+// Exemplo de uso da função com tratamento de exceção
+try {
+    // Suponha que os números fornecidos sejam 10 e 0
+    let n1 = 10;
+    let n2 = 0;
+    
+    // Chama a função dividirNumeros
+    dividirNumeros(n1, n2);
+} catch (e) {
+    // Captura e exibe a exceção
+    console.log(e.message);
+}
+
 
 
 
@@ -297,16 +315,19 @@ console.log(maisSete); // [2, 4, 6, 8, 10]
 
 
 //Questão 20
-/*let dentificar = ['Carteira de Motorista', 'Identidade']
-switch (fazerProva) {
-    case "Carteira de Motorista":
-        console.log("COM A CARTEIRA DE MOTORISTA RAIMUNDO PODE FAZER A PROVA")
-    case "Identidade":
-        console.log("COM A IDENTIDADE RAIMUNDO PODE FAZER A PROVA")
-        break
-    default:
-        console.log("NÃO FARÁ A PROVA")
-}*/
+// Declara variáveis booleanas que indicam se Raimundo possui carteira de identidade ou de motorista
+let temCarteiraIdentidade = false; // exemplo de valor
+let temCarteiraMotorista = true; // exemplo de valor
+
+// Verifica se Raimundo possui pelo menos uma das carteiras
+if (temCarteiraIdentidade || temCarteiraMotorista) {
+    console.log("Raimundo pode fazer a prova");
+} else {
+    console.log("Raimundo não pode fazer a prova");
+}
+
+//Exemplo de saída: Com as variáveis definidas como temCarteiraIdentidade = true e temCarteiraMotorista = false, a saída será: Raimundo pode fazer a prova. Se ambas as variáveis fossem false, a saída seria: Raimundo não pode fazer a prova.
+
 
 
 //Questão 21
