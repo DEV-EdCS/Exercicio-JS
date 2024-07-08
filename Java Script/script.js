@@ -127,9 +127,9 @@ if (numero === 5) {
 
 //Questão 12
 //Declara um array de numeros de 1 a 10
-let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 //Declara um array vazio para  armazenar os numeros pares
-let pares = [];
+const pares = [];
 
 //itera sobre cada elemento do array 'numeros'
 numeros.forEach(numeros => {
@@ -267,7 +267,7 @@ function
 }
 
 //Exemplo de uso da função com uma distancia de 2900 km
-let distancia = 2500; //exemplo de distancia
+let distancia = 2900; //exemplo de distancia
 let custo = CalcularCustoViagem(distancia)
 
 //exibe o custo de viagem no console
